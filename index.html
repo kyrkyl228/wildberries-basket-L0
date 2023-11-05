@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header class="head">
         <div class="head__content">
-            <img src="/assets/img/menu.png" class="head__menu-desk">
-            <img src="/assets/img/menu-mob.png" class="head__menu-mob">
+            <img src="./assets/img/menu.png" class="head__menu-desk">
+            <img src="./assets/img/menu-mob.png" class="head__menu-mob">
             <p class="head__shop-name">товары <br class="head__content-br"> и точка</p>
             <input placeholder="Я ищу..." class="head__input">
             <label class="head__label-search">
-                <img src="/assets/img/search.png" class="head__search-image">
-                <img src="/assets/img/search-mob.png" class="head__search-image-mob">
+                <img src="./assets/img/search.png" class="head__search-image">
+                <img src="./assets/img/search-mob.png" class="head__search-image-mob">
             </label>
             <div class="head__profile">
-                <img src="/assets/img/profile.png" class="head__profile-image">
+                <img src="./assets/img/profile.png" class="head__profile-image">
                 <p class="head__profile-name">Профиль</p>
             </div>
             <div class="head__basket">
                 <div class="head__basket-icon">
-                    <img src="/assets/img/basket.png" class="head__basket-image">
+                    <img src="./assets/img/basket.png" class="head__basket-image">
                     <div class="head__basket-value-wrapper">
                         <p class="head__basket-value" id="bask-val-id">3</p>
                     </div>
@@ -41,7 +40,7 @@
                 <div class="content__select-all" id="first-ar-id">
                     <input type="checkbox" class="content__select-all-checkbox" id="select-all-checkbox-id" checked>
                     <p class="content__select-all-name">Выбрать все</p>
-                    <img src="/assets/img/arrow.png" class="content__select-all-arrow" onclick="hiddenChapter(this, 'things-id', 'first-ar-id')">
+                    <img src="./assets/img/arrow.png" class="content__select-all-arrow" onclick="hiddenChapter(this, 'things-id', 'first-ar-id')">
                 </div>
                 <div class="content__things" id="things-id">
                     <div class="empty" id="emp-id">
@@ -54,7 +53,7 @@
                         <div class="content__thing-size_mob">
                             <p class="content__thing-size-p_mob">56</p>
                         </div>
-                        <img src="/assets/img/t-shirt.png" class="content__thing-image">
+                        <img src="./assets/img/t-shirt.png" class="content__thing-image">
                         <div class="content__thing-info">
                             <p class="content__thing-name">Футболка UZcotton мужская</p>
                             <div class="content__thing-params">
@@ -90,8 +89,8 @@
                             </div>
                             <p class="content__thing-left">Осталось 2 шт.</p>
                             <div class="content__thing-action">
-                                <img src="/assets/img/like.png" class="content__thing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)" onclick="setImage(this)">
-                                <img src="/assets/img/delete.png" class="content__thing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('tShirt')">
+                                <img src="./assets/img/like.png" class="content__thing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)" onclick="setImage(this)">
+                                <img src="./assets/img/delete.png" class="content__thing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('tShirt')">
                             </div>
                         </div>
                         <div class="content__price">
@@ -120,7 +119,7 @@
                     </div>
                     <div class="content__thing" id="case-id">
                         <input type="checkbox" class="content__thing-checkbox" id="checkbox-case-id" onchange="handleCheckboxActivation('case')" checked>
-                        <img src="/assets/img/case.png" class="content__thing-image">
+                        <img src="./assets/img/case.png" class="content__thing-image">
                         <div class="content__thing-info">
                             <p class="content__thing-name">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
                             <div class="content__thing-params">
@@ -154,8 +153,8 @@
                                 </button>
                             </div>
                             <div class="content__thing-action">
-                                <img src="/assets/img/like.png" class="content__thing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                                <img src="/assets/img/delete.png" class="content__thing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('case')">
+                                <img src="./assets/img/like.png" class="content__thing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
+                                <img src="./assets/img/delete.png" class="content__thing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('case')">
                             </div>
                         </div>
                         <div class="content__price">
@@ -184,7 +183,7 @@
                     </div>
                     <div class="content__thing" id="pencils-id">
                         <input type="checkbox" class="content__thing-checkbox" id="checkbox-pencils-id" onchange="handleCheckboxActivation('pencils')" checked>
-                        <img src="/assets/img/pencils.png" class="content__thing-image">
+                        <img src="./assets/img/pencils.png" class="content__thing-image">
                         <div class="content__thing-info">
                             <p class="content__thing-name">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell</p>
                             <p class="content__thing-stock" style="margin-top: 7px;">Коледино WB</p>
@@ -216,8 +215,8 @@
                             </div>
                             <p class="content__thing-left">Осталось 2 шт.</p>
                             <div class="content__thing-action">
-                                <img src="/assets/img/like.png" class="content__thing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                                <img src="/assets/img/delete.png" class="content__thing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('pencils')">
+                                <img src="./assets/img/like.png" class="content__thing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
+                                <img src="./assets/img/delete.png" class="content__thing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeProduct('pencils')">
                             </div>
                         </div>
                         <div class="content__price">
@@ -247,7 +246,7 @@
                 </div>
                 <div class="content__absent-head-block" id="content__absent-head-block-id">
                     <p class="content__absent-head">Отсутствуют · 3 товара</p>
-                    <img src="/assets/img/arrow.png" class="content__absent-head-arrow" onclick="hiddenChapter(this, 'content__absent-id', 'content__absent-head-block-id')">
+                    <img src="./assets/img/arrow.png" class="content__absent-head-arrow" onclick="hiddenChapter(this, 'content__absent-id', 'content__absent-head-block-id')">
                 </div>
                 <div class="content__absent" id="content__absent-id">
                     <div class="content__absent-thing" id="absent-thing-id-1">
@@ -263,8 +262,8 @@
                             </div>
                         </div>
                         <div class="content__absent-thing-action">
-                            <img src="/assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="/assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-1')">
+                            <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-1')">
                         </div>
                     </div>
                     <div class="content__absent-thing" id="absent-thing-id-2">
@@ -276,8 +275,8 @@
                             </div>
                         </div>
                         <div class="content__absent-thing-action">
-                            <img src="/assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="/assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-2')">
+                            <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-2')">
                         </div>
                     </div>
                     <div class="content__absent-thing" id="absent-thing-id-3">
@@ -289,8 +288,8 @@
                             <p class="content__absent-thing-name">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell</p>
                         </div>
                         <div class="content__absent-thing-action">
-                            <img src="/assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="/assets/img/like.png" data-hover-src="/assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="/assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="/assets/img/delete.png" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-3')">
+                            <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-3')">
                         </div>
                     </div>
                 </div>
@@ -304,7 +303,7 @@
                         <div class="content__delivery-to" id="del-to-id">
                             <p class="content__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
                             <div class="content__delivery-address-info" id="pick-up-point-address-id">
-                                <img src="/assets/img/star.png" class="content__delivery-address-star">
+                                <img src="./assets/img/star.png" class="content__delivery-address-star">
                                 <p class="content__delivery-address-rating">4.99</p>
                                 <p class="content__delivery-address-time">Ежедневно c 10 до 21</p>
                             </div>
@@ -314,16 +313,16 @@
                         <p class="content__delivery-chapter">5—6 февраля</p>
                         <div class="content__delivery-purchases content__delivery-purchases-prod">
                             <div class="content__delivery-purchase">
-                                <img src="/assets/img/t-shirt.png" class="content__delivery-purchase-image">
+                                <img src="./assets/img/t-shirt.png" class="content__delivery-purchase-image">
                             </div>
                             <div class="content__delivery-purchase">
-                                <img src="/assets/img/case.png" class="content__delivery-purchase-image">
+                                <img src="./assets/img/case.png" class="content__delivery-purchase-image">
                                 <div class="content__delivery-purchase-quantity-wrapper">
                                     <p class="content__delivery-purchase-quantity">184</p>
                                 </div>
                             </div>
                             <div class="content__delivery-purchase">
-                                <img src="/assets/img/pencils.png" class="content__delivery-purchase-image">
+                                <img src="./assets/img/pencils.png" class="content__delivery-purchase-image">
                                 <div class="content__delivery-purchase-quantity-wrapper">
                                     <p class="content__delivery-purchase-quantity">2</p>
                                 </div>
@@ -333,7 +332,7 @@
                         <div>
                             <div class="content__delivery-purchases content__delivery-purchases-prod">
                                 <div class="content__delivery-purchase">
-                                    <img src="/assets/img/case.png" class="content__delivery-purchase-image">
+                                    <img src="./assets/img/case.png" class="content__delivery-purchase-image">
                                     <div class="content__delivery-purchase-quantity-wrapper">
                                         <p class="content__delivery-purchase-quantity">16</p>
                                     </div>
@@ -342,7 +341,7 @@
                         </div>
                     </div>
                     <div class="content__delivery-back">
-                        <img src="/assets/img/sber.png" class="content__delivery-back-sber-logo">
+                        <img src="./assets/img/sber.png" class="content__delivery-back-sber-logo">
                         <p class="content__delivery-back-text">Обратная доставка товаров на склад при отказе — <span class="content__delivery-back-text-mod" onmouseover="showElement('drop-free-2')" onmouseout="hideElement('drop-free-2')">бесплатно</span></p>
                         <div class="content__delivery-back-drop-wrapper" id="drop-free-2"> 
                             <div class="content__delivery-back-drop">
@@ -357,7 +356,7 @@
                         <p class="content__card-change" onclick="showModalCard('modal-1-id')">Изменить</p>
                     </div>
                     <div class="content__card-info" id="card-info-id">
-                        <img src="/assets/img/mir.png" class="content__card-image">
+                        <img src="./assets/img/mir.png" class="content__card-image">
                         <p class="content__card-number">1234 56•• •••• 1234</p>
                         <p class="content__card-date">01/30</p>
                     </div>
@@ -416,7 +415,7 @@
                     <div class="content__payment-delivery">
                         <div class="content__payment-delivery-top">
                             <p class="content__payment-delivery-top-text">Доставка в пункт выдачи</p>
-                            <img src="/assets/img/change-pencil.png" class="content__payment-delivery-top-change" onclick="showModalCard('modal-2-id')">
+                            <img src="./assets/img/change-pencil.png" class="content__payment-delivery-top-change" onclick="showModalCard('modal-2-id')">
                         </div>
                         <p class="content__payment-delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
                         <div class="content__payment-delivery-date-wrapper">
@@ -424,7 +423,7 @@
                         </div>
                     </div>
                     <div class="content__payment-delivery-back">
-                        <img src="/assets/img/sber.png" class="content__payment-delivery-back-image">
+                        <img src="./assets/img/sber.png" class="content__payment-delivery-back-image">
                         <p class="content__payment-delivery-back-text">Обратная доставка товаров на склад при отказе — <span onmouseover="showElement('drop-free-1')" onmouseout="hideElement('drop-free-1')" class="content__payment-delivery-back-span">бесплатно</span></p>
                         <div class="content__payment-delivery-back-drop-wrapper" id="drop-free-1"> 
                             <div class="content__payment-delivery-back-drop">
@@ -435,10 +434,10 @@
                     <div class="content__payment-pay">
                         <div class="content__payment-pay-top" onclick="showModalCard('modal-1-id')">
                             <p class="content__payment-pay-top-text">Оплата картой</p>
-                            <img src="/assets/img/change-pencil.png" class="content__payment-pay-top-change">
+                            <img src="./assets/img/change-pencil.png" class="content__payment-pay-top-change">
                         </div>
                         <div class="content__payment-pay-card">
-                            <img src="/assets/img/mir.png" class="content__payment-pay-card-image">
+                            <img src="./assets/img/mir.png" class="content__payment-pay-card-image">
                             <p class="content__payment-pay-card-number">1234 12•• •••• 1234</p>
                         </div>
                     </div>
@@ -451,7 +450,7 @@
                     </div>
                     <button class="content__payment-button" id="payment-button-id" onclick="validate()">Заказать</button>
                     <div class="content__payment-accept">
-                        <img src="/assets/img/accept.png" class="content__payment-accept-image">
+                        <img src="./assets/img/accept.png" class="content__payment-accept-image">
                         <p class="content__payment-accept-text">Соглашаюсь <a href="#" class="content__payment-accept-link">с правилами пользования торговой площадкой</a> и <a class="content__payment-accept-link">возврата</a></p>
                     </div>
                 </div>
@@ -463,42 +462,42 @@
     </footer>
     <div class="bottom-nav-wrapper">
         <div class="bottom-nav">
-            <div><img src="/assets/img/home.png"></div>
-            <div><img src="/assets/img/search-2.png"></div>
+            <div><img src="./assets/img/home.png"></div>
+            <div><img src="./assets/img/search-2.png"></div>
             <div class="bottom-nav__basket">
-                <img src="/assets/img/basket-2.png">
+                <img src="./assets/img/basket-2.png">
                 <div class="bottom-nav__basket-val-wrapper">
                     <p class="bottom-nav__basket-val" id="bot-bask-val-id">3</p>
                 </div>
             </div>
-            <div><img src="/assets/img/heart.png"></div>
-            <div><img src="/assets/img/profile-2.png"></div>    
+            <div><img src="./assets/img/heart.png"></div>
+            <div><img src="./assets/img/profile-2.png"></div>    
         </div>
     </div>
     <div class="modal-1__wrapper" id="modal-1-id" onclick="hiddenModalCard('modal-1-id')">
         <div class="modal-1__content" onclick="event.stopPropagation()">
             <div class="modal-1__top">
                 <p class="modal-1__top-name">Способ оплаты</p>
-                <img src="/assets/img/close.png" class="modal-1__top-close" onclick="hiddenModalCard('modal-1-id')">
+                <img src="./assets/img/close.png" class="modal-1__top-close" onclick="hiddenModalCard('modal-1-id')">
             </div>
             <div class="modal-1__card modal-1__card-first" inf='{"img": "/assets/img/mir.png", "num": "1234 56•• •••• 1234"}'>
                 <input type="radio" name="card" class="modal-1__radio" checked>
-                <img src="/assets/img/mir.png" class="modal-1__card-image">
+                <img src="./assets/img/mir.png" class="modal-1__card-image">
                 <p class="modal-1__num">1234 56•• •••• 1234</p>
             </div>
             <div class="modal-1__card" inf='{"img": "/assets/img/visa.png", "num": "1234 56•• •••• 1234"}'>
                 <input type="radio" name="card" class="modal-1__radio">
-                <img src="/assets/img/visa.png" class="modal-1__card-image">
+                <img src="./assets/img/visa.png" class="modal-1__card-image">
                 <p class="modal-1__num">1234 56•• •••• 1234</p>
             </div>
             <div class="modal-1__card" inf='{"img": "/assets/img/mcard.png", "num": "1234 56•• •••• 1234"}'>
                 <input type="radio" name="card" class="modal-1__radio">
-                <img src="/assets/img/mcard.png" class="modal-1__card-image">
+                <img src="./assets/img/mcard.png" class="modal-1__card-image">
                 <p class="modal-1__num">1234 56•• •••• 1234</p>
             </div>
             <div class="modal-1__card" inf='{"img": "/assets/img/blcard.png", "num": "1234 56•• •••• 1234"}'>
                 <input type="radio" name="card" class="modal-1__radio">
-                <img src="/assets/img/blcard.png" class="modal-1__card-image">
+                <img src="./assets/img/blcard.png" class="modal-1__card-image">
                 <p class="modal-1__num">1234 56•• •••• 1234</p>
             </div>
             <button class="modal-1__choose" id="modal-1__choose-id">Выбрать</button>
@@ -508,7 +507,7 @@
         <div class="modal-2__content" onclick="event.stopPropagation()">
             <div class="modal-2__top">
                 <p class="modal-2__top-name">Способ доставки</p>
-                <img src="/assets/img/close.png" class="modal-2__top-close" onclick="hiddenModalCard('modal-2-id')">
+                <img src="./assets/img/close.png" class="modal-2__top-close" onclick="hiddenModalCard('modal-2-id')">
             </div>
             <div class="modal-2__buttons">
                 <button class="modal-2__btn modal-2__btn-1" id="modal-2__btn-1" onclick="poinOfDelivery()">В пункт выдачи</button>
@@ -519,17 +518,17 @@
                 <div class="modal-2__adr modal-2__adr-first" id="adr-1" inf='{"address": "Бишкек, улица Табышалиева, 57", "point": "h"}'>
                     <input type="radio" name="adr" class="modal-2__radio" checked>
                     <p class="modal-2__adr-text">Бишкек, улица Табышалиева, 57</p>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-1')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-1')">
                 </div>
                 <div class="modal-2__adr" id="adr-2" inf='{"address": "Бишкек, улица Жукеева-Пудовкина, 77/1", "point": "h"}'>
                     <input type="radio" name="adr" class="modal-2__radio">
                     <p class="modal-2__adr-text">Бишкек, улица Жукеева-Пудовкина, 77/1</p>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-2')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-2')">
                 </div>
                 <div class="modal-2__adr" id="adr-3" inf='{"address": "Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1", "point": "h"}'>
                     <input type="radio" name="adr" class="modal-2__radio">
                     <p class="modal-2__adr-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</p>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-3')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-3')">
                 </div>
             </div>
             <div class="modal-2__s" id="modal-2__s">
@@ -539,35 +538,35 @@
                     <div>
                         <p class="modal-2__adr-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</p>
                         <div class="modal-2__adr-inf-block">
-                            <img src="/assets/img/star.png" class="modal-2__adr-inf-star">
+                            <img src="./assets/img/star.png" class="modal-2__adr-inf-star">
                             <p class="modal-2__adr-inf-name">Пункт выдачи</p>
                         </div>
                     </div>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-4')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-4')">
                 </div>
                 <div class="modal-2__adr" id="adr-5" inf='{"address": "г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1", "point": "p"}'>
                     <input type="radio" name="adr" class="modal-2__radio">
                     <div class="">
                         <p class="modal-2__adr-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</p>
                         <div class="modal-2__adr-inf-block">
-                            <img src="/assets/img/star.png" class="modal-2__adr-inf-star">
+                            <img src="./assets/img/star.png" class="modal-2__adr-inf-star">
                             <p class="modal-2__adr-inf-mark">4.99</p>
                             <p class="modal-2__adr-inf-name">Пункт выдачи</p>
                         </div>                       
                     </div>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-5')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-5')">
                 </div>
                 <div class="modal-2__adr" id="adr-6" inf='{"address": "г. Бишкек, улица Табышалиева, д. 57", "point": "p"}'>
                     <input type="radio" name="adr" class="modal-2__radio">
                     <div>
                         <p class="modal-2__adr-text">г. Бишкек, улица Табышалиева, д. 57</p>
                         <div class="modal-2__adr-inf-block">
-                            <img src="/assets/img/star.png" class="modal-2__adr-inf-star">
+                            <img src="./assets/img/star.png" class="modal-2__adr-inf-star">
                             <p class="modal-2__adr-inf-mark">4.99</p>
                             <p class="modal-2__adr-inf-name">Пункт выдачи</p>
                         </div>
                     </div>
-                    <img src="/assets/img/delete.png" class="modal-2__adr-del" data-hover-src="/assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-6')">
+                    <img src="./assets/img/delete.png" class="modal-2__adr-del" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('adr-6')">
                 </div>
             </div>
             <div class="modal-2__but-sub-wrapper">
@@ -575,7 +574,7 @@
             </div>
         </div>
     </div>
-    <script src="/scripts/style.js"></script>
-    <script src="/scripts/logic.js"></script>
+    <script src="./scripts/style.js"></script>
+    <script src="./scripts/logic.js"></script>
 </body>
 </html>
