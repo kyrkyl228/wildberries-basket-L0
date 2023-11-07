@@ -3127,3 +3127,10 @@ input[type = checkbox]{
     background-color: #CB11AB;
     margin: auto auto 0 auto;
 }
+
+.content__basic-info-price{
+    display: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}

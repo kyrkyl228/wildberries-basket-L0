@@ -92,8 +92,11 @@ function validate(){
 // --------------------------------------------
 
 let shop = {
+    basketTotal: 2101063,
+    basketQuantity: 203,
     total: 2101063,
     productValue: 3,
+    absenceValue: 3,
     basket : {
         tShirt : {
             total : 522,
@@ -125,10 +128,14 @@ let shop = {
     }
 }
 
+
+
 function dateUpdate(){
     let totalSum = 0;
     let totalQuantity = 0;
     let tTotalLast = 0;
+    shop.basketTotal = 0;
+    shop.basketQuantity = 0;
 
     for (const key in shop.basket) {
         if (typeof shop.basket[key] === 'object' && shop.basket[key].use) {
@@ -136,10 +143,15 @@ function dateUpdate(){
             totalQuantity += shop.basket[key].quantity;
             tTotalLast += shop.basket[key].totalLast;
         }
+        if (typeof shop.basket[key] === 'object'){
+            shop.basketTotal += shop.basket[key].total;
+            shop.basketQuantity += shop.basket[key].quantity;
+        }
     }
 
     if(shop.productValue == 0){
-        document.getElementById('emp-id').style.display = 'flex'
+        document.getElementById('emp-id').style.display = 'flex';
+        document.getElementById('first-ar-id').style.display = 'none';
     }
 
     shop.total = totalSum;
@@ -149,6 +161,10 @@ function dateUpdate(){
     document.getElementById('total-product-id').innerHTML = totalQuantity;
     document.getElementById('total-without-dis-id').innerHTML = tTotalLast;
     document.getElementById('total-dis-id').innerHTML = tTotalLast - totalSum;
+
+    document.getElementById('basket-quantity-id').innerHTML = shop.basketQuantity;
+    document.getElementById('basket-total-id').innerHTML = shop.basketTotal;
+
 }
 
 function butDateUpdate(minusId, valueId, plusId, product, relevanValueId, dis){
@@ -211,6 +227,18 @@ function removeProduct(id){
     document.getElementById('bot-bask-val-id').innerHTML = shop.productValue;
 }
 
+//---------------
+function removeAbsenceProduct(id){
+    document.getElementById(id).remove();
+
+    shop.absenceValue -= 1;
+
+    document.getElementById('abs-prod-val-id').innerHTML = shop.absenceValue;
+    if(shop.absenceValue == 0){
+        document.getElementById('content__absent-head-block-id').style.display = 'none';
+        document.getElementById('content__absent-id').style.display = 'none';
+    }
+}
 // ---------------------
 const valueCheckboxWhenPayment = document.getElementById('when-payment-id');
 valueCheckboxWhenPayment.addEventListener("change", getValueCheckboxWhenPayment);
@@ -241,14 +269,12 @@ selectCheckbox.addEventListener('change', function () {
         for (const key in shop.basket) {
             if (typeof shop.basket[key] === 'object') {
                 shop.basket[key].use = true;
-                console.log(shop.basket[key].use);
             }
         }
     }else{
         for (const key in shop.basket) {
             if (typeof shop.basket[key] === 'object') {
                 shop.basket[key].use = false;
-                console.log(shop.basket[key].use);
             }
         }
     }
@@ -323,19 +349,24 @@ document.getElementById('modal-2__but-id').addEventListener('click', function() 
     if (selectedCard) {
         let card = selectedCard.getAttribute('inf');
         card = JSON.parse(card);
+        
         document.getElementById('del-to-id').innerHTML = `
             <p class="content__delivery-address">${card.address}</p>
             ${
                 pointCheck(card.point)
             }
         `;
-        
-        if(card.point == 'p'){
-            document.getElementById('pick-up-point-id').innerHTML = 'Пункт выдачи';
-        }else{
-            document.getElementById('pick-up-point-id').innerHTML = 'Домашний адрес';
-        }
+        document.getElementById('content__payment-delivery-address-id').innerHTML = card.address;
+        // if(card.point == 'p'){
+        //     document.getElementById('pick-up-point-id').innerHTML = 'Пункт выдачи';
+        //     document.getElementById('content__payment-delivery-top-text-id').innerHTML = 'Пункт выдачи';
+        // }else{
+        //     document.getElementById('pick-up-point-id').innerHTML = 'Домашний адрес';
+        //     document.getElementById('content__payment-delivery-top-text-id').innerHTML = 'Домашний адрес';
+        // }
     }
 
     hiddenModalCard('modal-2-id');
 });
+
+//--------------------

@@ -82,16 +82,30 @@ function inputHeadMove(th, id){
 //--------------------------
 
 function hiddenChapter(th, chapter, border) {
+    const borderId = document.getElementById(border);
+    const valueId = document.getElementById('chapter-basket-head-value-id');
+    const checkboxId = document.getElementById('select-all-checkbox-id');
+    const nameId = document.getElementById('select-all-name-id');
     if (th.style.transform === 'rotate(180deg)') {
         th.style.transform = 'rotate(0deg)';
         document.getElementById(chapter).style.display = 'grid';
-        document.getElementById(border).style.paddingBottom = '0';
-        document.getElementById(border).style.borderBottom = '0';
+        if(chapter != 'content__absent-id'){
+            borderId.style.paddingBottom = '0';
+            borderId.style.borderBottom = '0';
+            valueId.style.display = 'none';
+            checkboxId.style.display = 'block';
+            nameId.style.display = 'block';
+        }
     } else {
         th.style.transform = 'rotate(180deg)';
-        console.log(document.getElementById(border))
         document.getElementById(chapter).style.display = 'none'
-        document.getElementById(border).style.paddingBottom = '15px';
-        document.getElementById(border).style.borderBottom = '1px solid rgba(0, 0, 0, 0.1)';
+        if(chapter != 'content__absent-id'){
+            borderId.style.paddingBottom = '15px';
+            borderId.style.borderBottom = '1px solid rgba(0, 0, 0, 0.1)';
+            valueId.style.display = 'block';
+            checkboxId.style.display = 'none';
+            nameId.style.display = 'none';
+        }
+
     }
 }

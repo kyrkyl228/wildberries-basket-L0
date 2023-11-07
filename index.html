@@ -27,7 +27,7 @@
                     <img src="./assets/img/basket.png" class="head__basket-image">
                     <div class="head__basket-value-wrapper">
                         <p class="head__basket-value" id="bask-val-id">3</p>
-                    </div>
+                    </div>  
                 </div>
                 <p class="head__basket-name">Корзина</p>
             </div>
@@ -38,8 +38,9 @@
             <div class="content__basic-info" id="content__basic-info-id">
                 <p class="content__chapter-basket-head">Корзина</p>
                 <div class="content__select-all" id="first-ar-id">
+                    <div class="content__basic-info-price" id="chapter-basket-head-value-id"><span id="basket-quantity-id">203</span> товаров · <span id="basket-total-id">2 101 063</span> сом</div>
                     <input type="checkbox" class="content__select-all-checkbox" id="select-all-checkbox-id" checked>
-                    <p class="content__select-all-name">Выбрать все</p>
+                    <p class="content__select-all-name" id="select-all-name-id">Выбрать все</p>
                     <img src="./assets/img/arrow.png" class="content__select-all-arrow" onclick="hiddenChapter(this, 'things-id', 'first-ar-id')">
                 </div>
                 <div class="content__things" id="things-id">
@@ -245,7 +246,7 @@
                     </div>
                 </div>
                 <div class="content__absent-head-block" id="content__absent-head-block-id">
-                    <p class="content__absent-head">Отсутствуют · 3 товара</p>
+                    <p class="content__absent-head">Отсутствуют · <span id="abs-prod-val-id">3</span> товара</p>
                     <img src="./assets/img/arrow.png" class="content__absent-head-arrow" onclick="hiddenChapter(this, 'content__absent-id', 'content__absent-head-block-id')">
                 </div>
                 <div class="content__absent" id="content__absent-id">
@@ -263,7 +264,7 @@
                         </div>
                         <div class="content__absent-thing-action">
                             <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-1')">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeAbsenceProduct('absent-thing-id-1')">
                         </div>
                     </div>
                     <div class="content__absent-thing" id="absent-thing-id-2">
@@ -276,7 +277,7 @@
                         </div>
                         <div class="content__absent-thing-action">
                             <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-2')">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeAbsenceProduct('absent-thing-id-2')">
                         </div>
                     </div>
                     <div class="content__absent-thing" id="absent-thing-id-3">
@@ -289,7 +290,7 @@
                         </div>
                         <div class="content__absent-thing-action">
                             <img src="./assets/img/like.png" class="content__absent-thingthing-like" data-normal-src="./assets/img/like.png" data-hover-src="./assets/img/like-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="setImage(this)">
-                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeElement('absent-thing-id-3')">
+                            <img src="./assets/img/delete.png" class="content__absent-thingthing-delete" data-normal-src="./assets/img/delete.png" data-hover-src="./assets/img/delete-act.png" onmouseover="changeImage(this)" onmouseout="restoreImage(this)" onclick="removeAbsenceProduct('absent-thing-id-3')">
                         </div>
                     </div>
                 </div>
@@ -298,7 +299,7 @@
                         <p class="content__delivery-head">Способ доставки</p>
                         <p class="content__delivery-change" onclick="showModalCard('modal-2-id')">Изменить</p>
                     </div>
-                    <div class="content__delivery-grid">
+                    <div class="content__delivery-grid" id="content__delivery-grid-id">
                         <p class="content__delivery-chapter" id="pick-up-point-id">Пункт выдачи</p>
                         <div class="content__delivery-to" id="del-to-id">
                             <p class="content__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
@@ -414,10 +415,10 @@
                     </div>
                     <div class="content__payment-delivery">
                         <div class="content__payment-delivery-top">
-                            <p class="content__payment-delivery-top-text">Доставка в пункт выдачи</p>
+                            <p class="content__payment-delivery-top-text" id="content__payment-delivery-top-text-id">Доставка в пункт выдачи</p>
                             <img src="./assets/img/change-pencil.png" class="content__payment-delivery-top-change" onclick="showModalCard('modal-2-id')">
                         </div>
-                        <p class="content__payment-delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <p class="content__payment-delivery-address" id="content__payment-delivery-address-id">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
                         <div class="content__payment-delivery-date-wrapper">
                             <p class="content__payment-delivery-date">5–8 фев</p>                            
                         </div>
