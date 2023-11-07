@@ -269,7 +269,6 @@ function handleCheckboxActivation(id) {
 document.getElementById('modal-1__choose-id').addEventListener('click', function() {
     var selectedCard;
     var cards = document.getElementsByClassName('modal-1__card');
-
     for (var i = 0; i < cards.length; i++) {
         var radio = cards[i].querySelector('.modal-1__radio');
         if (radio.checked) {
@@ -277,11 +276,15 @@ document.getElementById('modal-1__choose-id').addEventListener('click', function
             break;
         }
     }
-
     if (selectedCard) {
         let card = selectedCard.getAttribute('inf');
         card = JSON.parse(card);
         document.getElementById('card-info-id').innerHTML = `
+            <img src="${card.img}" class="content__card-image">
+            <p class="content__card-number">${card.num}</p>
+            <p class="content__card-date">01/30</p>
+        `;
+        document.getElementById('payment-pay-card-id').innerHTML = `
             <img src="${card.img}" class="content__card-image">
             <p class="content__card-number">${card.num}</p>
             <p class="content__card-date">01/30</p>
